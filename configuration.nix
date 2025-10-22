@@ -40,6 +40,7 @@
     shell = pkgs.zsh;
     extraGroups = [
       "wheel"
+      "lxd"
     ];
     packages = with pkgs; [ home-manager ];
     openssh.authorizedKeys.keys = [
@@ -52,6 +53,7 @@
     shell = pkgs.zsh;
     extraGroups = [
       "wheel"
+      "lxd"
     ];
     packages = with pkgs; [ home-manager ];
     openssh.authorizedKeys.keys = [
