@@ -35,6 +35,7 @@
 
   users.users.hpidcock = {
     isNormalUser = true;
+    shell = pkgs.zsh;
     extraGroups = [
       "wheel"
     ];
@@ -46,6 +47,7 @@
 
   users.users.tlm = {
     isNormalUser = true;
+    shell = pkgs.zsh;
     extraGroups = [
       "wheel"
     ];
