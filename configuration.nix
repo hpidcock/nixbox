@@ -64,6 +64,7 @@
     enable = true;
   };
 
+  services.tailscale.enable = true;
   services.openssh.enable = true;
   networking.firewall.enable = false;
 
