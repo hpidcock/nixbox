@@ -33,6 +33,8 @@
   #   useXkbConfig = true; # use xkb.options in tty.
   # };
 
+  programs.zsh.enable = true;
+
   users.users.hpidcock = {
     isNormalUser = true;
     shell = pkgs.zsh;
