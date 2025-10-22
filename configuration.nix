@@ -68,6 +68,7 @@
   services.tailscale.enable = true;
   services.openssh.enable = true;
   networking.firewall.enable = false;
+  security.sudo.wheelNeedsPassword = false;
 
   system.stateVersion = "25.05"; # Did you read the comment?
 }
