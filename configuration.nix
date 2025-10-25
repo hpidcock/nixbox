@@ -72,7 +72,12 @@
   };
 
   services.tailscale.enable = true;
-  services.openssh.enable = true;
+  services.openssh = {
+    enable = true;
+	settings = {
+	  AllowAgentForwarding = true;
+	};
+  };
   networking.firewall.enable = false;
   security.sudo.wheelNeedsPassword = false;
 
