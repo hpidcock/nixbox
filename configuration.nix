@@ -76,6 +76,7 @@
     enable = true;
     settings = {
       AllowAgentForwarding = true;
+      StreamLocalBindUnlink = true;
     };
   };
   networking.firewall.enable = false;
