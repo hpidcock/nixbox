@@ -35,6 +35,7 @@
     fsType = "xfs";
     options = [
       "discard"
+      "nofail"
       "defaults"
     ];
   };
@@ -47,6 +48,7 @@
     fsType = "none";
     options = [
       "bind"
+      "nofail"
     ];
   };
 
