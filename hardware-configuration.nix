@@ -33,6 +33,21 @@
   fileSystems."/mnt/devel01-gocache" = {
     device = "/dev/disk/by-id/scsi-0HC_Volume_103855644";
     fsType = "xfs";
+    options = [
+      "discard"
+      "defaults"
+    ];
+  };
+
+  fileSystems."/home/hpidcock/.cache/go-build" = {
+    depends = [
+      "/mnt/devel01-gocache"
+    ];
+    device = "/mnt/devel01-gocache/hpidcock/.cache/go-build";
+    fsType = "none";
+    options = [
+      "bind"
+    ];
   };
 
   fileSystems."/boot" = {
