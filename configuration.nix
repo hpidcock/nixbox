@@ -89,5 +89,14 @@
   networking.firewall.enable = false;
   security.sudo.wheelNeedsPassword = false;
 
+  security.pam.loginLimits = [
+    {
+      domain = "*";
+      type = "soft";
+      item = "nofile";
+      value = 8192;
+    }
+  ];
+
   system.stateVersion = "25.05"; # Did you read the comment?
 }
