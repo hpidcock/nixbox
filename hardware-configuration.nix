@@ -51,6 +51,18 @@
       "nofail"
     ];
   };
+  
+  fileSystems."/home/tlm/.cache/go-build" = {
+    depends = [
+      "/mnt/devel01-gocache"
+    ];
+    device = "/mnt/devel01-gocache/tlm/.cache/go-build";
+    fsType = "none";
+    options = [
+      "bind"
+      "nofail"
+    ];
+  };
 
   fileSystems."/boot" = {
     device = "/dev/disk/by-uuid/B3E0-A665";
